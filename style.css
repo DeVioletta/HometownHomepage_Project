@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.border{
+    border:1px solid black;
+}
+.header-section{
+    background-image: url(./images/srmd.jpg);
+    background-size: cover;
+    width:100%;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0 0 2px #121212;
+}
+
+.header-title, .header-p{
+    border-radius: 10px;
+}
+.header-title{
+    background-color: #ff6d00;
+    color:white;
+    padding:5px 10px;
+    margin:0;
+    font-size:2.5rem;
+}
+
+.header-p{
+    background-color: #ff8500;
+    color:white;
+    padding:5px 10px;
+    margin:24px;
+    font-size:1.6rem;
+}
+
+.main-section{
+    width:100%;
+    background-color: #ff9505;
+    color:white;
+    text-shadow: 0 0 1px #121212;
+}
+
+.main-section h2{
+    margin:0;
+    padding: 30px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px black;
+}
+.activity-section{
+    display:flex;
+}
+
+.activity-box{
+    width:33.333%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    gap:10px;
+    font-weight:540;
+}
+
+
+
+.activity-title{
+    margin:0;
+}
+.activity-img{
+    width:50%;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+.activity-p{
+    width:60%;
+    font-size:1rem;
+}
+
+.card-section{
+    display:flex;
+    justify-content: center;
+    background-color: #FFBD33;
+}
+
+.card{
+    margin:48px 0 20px 0;
+    background-color: #FF5733;
+    width:40%;
+    display:flex;
+    gap:10px;
+    border-radius:24px;
+    box-shadow: 4px 4px #121212;
+    min-width: 390px;
+}
+
+.LHS{
+    width:30%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RHS{
+    width:70%;
+    padding:5px 10px;
+}
+.quote-img{
+    object-fit: contain;
+    width:80%;
+    padding:10px;
+}
+
+@media (min-width:1350px) {
+    .header-section{
+        background-image: url(./images/srmdlong.jpg);
+    }
+}
+
+@media (max-width:600px){
+    .header-section{
+        background-image: url(./images/srmd4.jpg);
+    }
+    .activity-section{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activity-box{
+        width:100%;
+    }
+    .activity-p{
+        width:90%;
+    }
+
+    .card{
+        margin:48px 10px 5px 10x;
+    }
+    .RHS{
+        padding:5px;
+    }
+}
